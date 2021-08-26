@@ -37,8 +37,8 @@ const Table = ({ columns, data }) => {
                   <span>
                     {column.isSorted
                       ? column.isSortedDesc
-                        ? < AiFillCaretUp />
-                        :  <AiFillCaretDown />
+                        ? <AiFillCaretDown />
+                        :  < AiFillCaretUp />
                                                   : ''}
                   </span>
                 </th>
