@@ -1,10 +1,15 @@
-import React from 'react'
-function Searchbar() {
-    return (
-        <form  className="search-bar">
-        <input className = "search-input" type="text"   name="search" />
-    </form>
-    )
-}
+import React from "react";
 
-export default Searchbar
+export const Searchbar = ({ filter, setFilter }) => {
+  return (
+    <input
+      className="search-input"
+      type="text"
+      name="search"
+      value={filter || ""}
+      onChange={(e) => setFilter(e.target.value)}
+    />
+  );
+};
+
+export default Searchbar;
